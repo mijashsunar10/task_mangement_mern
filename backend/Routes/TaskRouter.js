@@ -2,9 +2,17 @@ const express = require('express');
 const router = express.Router();
 const TaskModel = require('../Models/TaskModel');
 
-router.get('/',  (req, res) => {
-    res.send('Task Router is working');
-})
+
+const {createTask, fetchAllTask} = require('../Controllers/TaskController');
+
+router.get('/',  fetchAllTask
+)
+
+//to create a task
+
+router.post('/', createTask);
+
+
 
 
 module.exports = router;
