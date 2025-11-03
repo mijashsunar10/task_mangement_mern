@@ -3,7 +3,7 @@ const router = express.Router();
 const TaskModel = require('../Models/TaskModel');
 
 
-const {createTask, fetchAllTask, updateTask} = require('../Controllers/TaskController');
+const {createTask, fetchAllTask, updateTask, deleteTask} = require('../Controllers/TaskController');
 
 
 //to fetch all tasks
@@ -20,6 +20,8 @@ router.put('/:id',updateTask)
 
 
 //to delete  task
+router.delete('/:id',deleteTask)
+
 
 
 

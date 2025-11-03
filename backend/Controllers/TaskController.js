@@ -56,21 +56,21 @@ const updateTask = async(req,res)=>
 
 const deleteTask = async(req,res)=>
 {
-    const data = req.body;
+    
 
     try{
 
-        const model = new TaskModel(data);
-        await model.save();
-        res.status(201).json({message: "Task created successfully", success:true});
+    const id = req.params.id; //id nikalni
+       await TaskModel.findByIdAndDelete(id); 
+        res.status(200).json({message: "Task is deleted", success:true});
 
     }
     catch(err)
     {
-        res.status(500).json({message: "Server Error", error: err.message});
+        res.status(500).json({message: "failed to delete ", error: err.message});
     }
 }
 
-    module.exports = {createTask, fetchAllTask, updateTask
+    module.exports = {createTask, fetchAllTask, updateTask, deleteTask
 
 }
