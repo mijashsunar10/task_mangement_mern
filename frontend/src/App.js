@@ -1,10 +1,11 @@
 
 import './App.css';
+import TaskManger from './TaskManger';
 
 function App() {
   return (
     <div className="App">
-      <h1>Task Management Application</h1>
+     <TaskManger />
   
     </div>
   );
