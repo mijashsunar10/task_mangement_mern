@@ -15,5 +15,7 @@ moongoose = mongodb object modeling tool for Node.js
 # npm i -D nodemon
 npm i -D nodemon installs nodemon as a development-only tool that automatically restarts your Node.js server when code changes.
 
+# npx create-react-app frontend
 
+# npm i bootstrap react-icons react-toastify 
 
