@@ -12,3 +12,8 @@ cors = allows frontend and backend to make API requests
 
 moongoose = mongodb object modeling tool for Node.js
 
+# npm i -D nodemon
+npm i -D nodemon installs nodemon as a development-only tool that automatically restarts your Node.js server when code changes.
+
+
+
